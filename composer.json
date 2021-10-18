@@ -1,0 +1,27 @@
+{
+    "name": "mindz-team/laravel-permissions",
+    "description": "This package helps to manage roles and permissions in application and utilize `spatie/laravel-permission` package for convenient use.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "roman.szymanski",
+            "email": "r.szymanski@mindz.pl"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "spatie/laravel-permission": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mindz\\LaravelPermissions\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mindz\\LaravelPermissions\\LaravelPermissionsServiceProvider"
+            ]
+        }
+    }
+}
